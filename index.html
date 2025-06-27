@@ -3,148 +3,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shweta Kumari | Academic Profile</title>
+  <title>Shweta Kumari | CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    :root {
+      --bg: #f3f4f6;
+      --accent: #1e3a8a;
+      --text: #111827;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      background: #f4f4f9;
-      color: #333;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
       line-height: 1.6;
     }
-    header, footer {
-      text-align: center;
-      padding: 20px;
-      background: #003366;
+
+    header {
+      background-color: var(--accent);
       color: white;
+      padding: 40px 20px 20px;
+      text-align: center;
     }
-    main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px;
+
+    header img {
+      width: 180px;
+      height: auto;
+      border-radius: 12px;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px var(--shadow);
+      margin-top: 20px;
     }
-    h1, h2, h3 {
-      color: #003366;
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
     }
-    section {
-      margin-bottom: 40px;
+
+    .card {
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px var(--shadow);
+      transition: transform 0.2s ease;
     }
-    ul {
-      padding-left: 20px;
+
+    .card:hover {
+      transform: scale(1.01);
     }
+
+    h1, h2 {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
     a {
-      color: #0056b3;
+      color: var(--accent);
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
+
+    ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      header img {
+        width: 200px;
+      }
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Shweta Kumari</h1>
-    <p>PhD Scholar, Department of Mathematics, IIT Delhi</p>
+<header>
+  <h1>Shweta Kumari</h1>
+  <p>PhD Scholar, Department of Mathematics, IIT Delhi</p>
+  <img src="IMG_20240826_220538156.jpg" alt="Shweta Kumari">
+</header>
+
+<main class="container">
+  <div class="card">
+    <h2>Contact</h2>
     <p>Email: <a href="mailto:shwetakri8062@gmail.com">shwetakri8062@gmail.com</a></p>
-    <p>
-      <a href="https://scholar.google.co.in/citations?user=85F3FS0AAAAJ&hl=en" target="_blank">Google Scholar</a> |
-      <a href="https://www.researchgate.net/profile/Shweta-Kumari-54" target="_blank">ResearchGate</a>
-    </p>
-  </header>
+    <p><a href="https://scholar.google.co.in/citations?user=85F3FS0AAAAJ" target="_blank">Google Scholar</a> |
+       <a href="https://www.researchgate.net/profile/Shweta-Kumari-54" target="_blank">ResearchGate</a></p>
+  </div>
 
-  <main>
-    <section>
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Finite Difference Schemes</li>
-        <li>Fractional Differential Equations</li>
-        <li>Loaded Differential Equations</li>
-        <li>Metric Graphs</li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Research Interests</h2>
+    <p>Finite Difference Schemes, Fractional Differential Equations, Loaded Differential Equations, and Metric Graphs.</p>
+  </div>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>PhD (2020–Present)</strong> – IIT Delhi<br>
-          Thesis: <em>Standard and Nonstandard Finite Difference Schemes...</em><br>
-          Supervisor: Prof. Mani Mehra
-        </li>
-        <li><strong>MSc (2017–2019)</strong> – IIT-ISM Dhanbad, CGPA: 9.15<br>
-          Dissertation: <em>Water Wave Scattering by Dual Porous Walls...</em><br>
-          Supervisor: Prof. Ramanababu Kaligatla
-        </li>
-        <li><strong>BSc (2014–2017)</strong> – SSLNT College, Dhanbad (89%)</li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>PhD (2020–present):</strong> IIT Delhi</li>
+      <li><strong>MSc (2017–2019):</strong> IIT-ISM Dhanbad, CGPA: 9.15</li>
+      <li><strong>BSc (2014–2017):</strong> SSLNT College, 89%</li>
+    </ul>
+  </div>
 
-    <section>
-      <h2>Academic Positions</h2>
-      <ul>
-        <li>Senior CSIR Research Fellow, IIT Delhi (Oct 2022 – Present)</li>
-        <li>Junior CSIR Research Fellow, IIT Delhi (Sep 2020 – Sep 2022)</li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Academic Positions</h2>
+    <ul>
+      <li>Senior CSIR Research Fellow, IIT Delhi</li>
+      <li>Junior CSIR Research Fellow, IIT Delhi</li>
+    </ul>
+  </div>
 
-    <section>
-      <h2>Teaching Assistantship</h2>
-      <ul>
-        <li>MTL712, MTL101, MTL505, MTL509, MTP290, MTL107</li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Teaching Assistantship</h2>
+    <ul>
+      <li>MTL712, MTL101, MTL505, MTL509, MTP290, MTL107</li>
+    </ul>
+  </div>
 
-    <section>
-      <h2>Achievements</h2>
-      <ul>
-        <li>Qualified CSIR-JRF (AIR 136, 2019)</li>
-        <li>Qualified GATE (MA) – 2019</li>
-        <li>Qualified IIT JAM (MA) – 2017</li>
-        <li>MCM Scholarship (2017–2019)</li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Achievements</h2>
+    <ul>
+      <li>CSIR-JRF AIR 136 (2019)</li>
+      <li>GATE MA (2019)</li>
+      <li>IIT JAM MA (2017)</li>
+    </ul>
+  </div>
 
-    <section>
-      <h2>Conferences & Workshops</h2>
-      <ul>
-        <li>ICCS 2025, Singapore</li>
-        <li>ICFDA 2024, France</li>
-        <li>ICMTA 2024, Chennai</li>
-        <li>ICFDA 2023, UAE</li>
-        <li>WSCMDL 2024, Chennai</li>
-        <li>AIS Workshop 2022, New Delhi</li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Conferences</h2>
+    <ul>
+      <li>ICCS 2025 (Singapore)</li>
+      <li>IFAC FDA 2024 (France)</li>
+      <li>ICMTA, ICFDA, and more</li>
+    </ul>
+  </div>
 
-    <section>
-      <h2>Publications</h2>
-      <h3>Refereed Journals</h3>
-      <ul>
-        <li>J1. Numerical solution to loaded difference scheme... (Journal of Mathematical Chemistry, 2025)</li>
-        <li>J2. High-order approximation to Caputo derivative... (J. of Computational and Nonlinear Dynamics, 2024)</li>
-        <li>J3–J6: Communicated/To be communicated</li>
-      </ul>
+  <div class="card">
+    <h2>Publications</h2>
+    <ul>
+      <li>6+ Journal Articles</li>
+      <li>3+ Conference Proceedings</li>
+    </ul>
+  </div>
 
-      <h3>Conference Proceedings</h3>
-      <ul>
-        <li>C1. ICCS 2025, LNCS 15911</li>
-        <li>C2. ICFDA 2024, France</li>
-        <li>C3. ICFDA 2023, UAE</li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Responsibilities</h2>
+    <ul>
+      <li>Class Rep (MSc and BSc)</li>
+    </ul>
+  </div>
+</main>
 
-    <section>
-      <h2>Responsibilities</h2>
-      <ul>
-        <li>Class Representative – MSc (2017–2019)</li>
-        <li>Class Representative – BSc (2014–2015)</li>
-      </ul>
-    </section>
-  </main>
+<footer>
+  &copy; 2025 Shweta Kumari. All rights reserved.
+</footer>
 
-  <footer>
-    <p>&copy; 2025 Shweta Kumari</p>
-  </footer>
 </body>
 </html>
