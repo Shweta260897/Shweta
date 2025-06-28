@@ -33,36 +33,47 @@
       color: #f2cc8f;
     }
     main {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 60px auto;
-      text-align: center;
       padding: 20px;
       animation: fadeIn 1s ease-in;
+    }
+    .intro-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .profile {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .intro-text {
+      flex: 1;
     }
     h1 {
       font-size: 2.5rem;
       color: #81b29a;
-      margin: 0;
+      margin-bottom: 5px;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
     }
     h2 {
       font-size: 1.8rem;
       color: #3d405b;
       margin-top: 40px;
     }
-    .subtitle {
-      font-size: 1.2rem;
-      color: #3d405b;
-      margin-bottom: 30px;
-    }
-    .profile {
-      width: 220px;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .profile:hover {
-      transform: scale(1.05);
+    ul {
+      text-align: left;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.8;
     }
     footer {
       background: #f2cc8f;
@@ -94,15 +105,18 @@
     <a href="awards.html">Honours & Awards</a>
   </nav>
   <main>
-    <img src="IMG_20240826_220538156.jpg" alt="Shweta Kumari" class="profile">
-    <h1>Shweta Kumari</h1>
-    <p class="subtitle">PhD Scholar, Department of Mathematics, IIT Delhi</p>
-
-    <h2>Welcome to my homepage</h2>
-    <p>Hello and welcome! I'm Shweta Kumari, currently pursuing my PhD in Mathematics at the Indian Institute of Technology Delhi. My academic journey has been deeply rooted in mathematical modeling, numerical analysis, and the development of efficient computational methods. I am passionate about applying rigorous mathematics to solve complex differential equations that arise in real-world phenomena.</p>
+    <div class="intro-section">
+      <img src="IMG_20240826_220538156.jpg" alt="Shweta Kumari" class="profile">
+      <div class="intro-text">
+        <h1>Shweta Kumari</h1>
+        <p class="subtitle">PhD Scholar<br> Department of Mathematics<br> IIT Delhi</p>
+        <h2>Welcome to my homepage</h2>
+        <p>Hello and welcome! I'm Shweta Kumari, currently pursuing my PhD in Mathematics at the Indian Institute of Technology Delhi. My academic journey has been deeply rooted in mathematical modeling, numerical analysis, and the development of efficient computational methods. I am passionate about applying rigorous mathematics to solve complex differential equations that arise in real-world phenomena.</p>
+      </div>
+    </div>
 
     <h2>Research Interests</h2>
-    <ul style="text-align: left; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+    <ul>
       <li>Time-fractional differential equations</li>
       <li>Finite difference and nonstandard numerical schemes</li>
       <li>Computational methods on metric graphs</li>
