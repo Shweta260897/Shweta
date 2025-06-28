@@ -1,1 +1,105 @@
-<!-- Publications HTML -->
+<!-- publications.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shweta Kumari | Publications</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #fffdf7;
+      color: #3d405b;
+    }
+    nav {
+      background: #81b29a;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f2cc8f;
+    }
+    .banner {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: #81b29a;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #f2cc8f;
+      color: #3d405b;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="publications.html">Publications</a>
+    <a href="talks.html">Talks</a>
+    <a href="awards.html">Honours & Awards</a>
+  </nav>
+  <img src="college_banner.jpg" alt="Banner" class="banner">
+  <main>
+    <h1>Publications</h1>
+    <h2>Refereed Journal Publications</h2>
+    <ul>
+      <li>"Numerical solution to loaded difference scheme for time-fractional diffusion equation with temporal loads" – Journal of Mathematical Chemistry, 2025</li>
+      <li>"High-order approximation to Caputo derivative on graded mesh and time-fractional diffusion equation for nonsmooth solutions" – Journal of Computational and Nonlinear Dynamics, 2024</li>
+    </ul>
+    <h2>Communicated</h2>
+    <ul>
+      <li>"A study on spatially loaded time-fractional diffusion equation: Well-posedness, discretization, and simulation"</li>
+      <li>"Finite difference approximation of time-fractional advection-diffusion equation on a metric star graph"</li>
+      <li>"Analysis and simulation of diffusion equation on star graph with/without temporal loads"</li>
+      <li>"A nonstandard finite difference explicit scheme for two-dimensional Caputo-type time-fractional diffusion with improved stability"</li>
+    </ul>
+    <h2>Conference Proceedings</h2>
+    <ul>
+      <li>"Fourier Error Analysis of Caputo Derivative Approximations based on Lagrange Interpolation over Uniform Mesh" – ICCS 2025, LNCS 15911</li>
+      <li>"Numerical Approximation of Spatially Loaded Time-Fractional Diffusion Equation" – IFAC FDA 2024, pages 89–94</li>
+      <li>"L1 type approximation of a temporally loaded time-fractional diffusion equation" – ICFDA 2023, pages 1–6</li>
+    </ul>
+  </main>
+  <footer>
+    <p>Contact: <a href="mailto:shwetakri8062@gmail.com">shwetakri8062@gmail.com</a> | <a href="Shweta_CV.pdf">Download CV</a></p>
+  </footer>
+</body>
+</html>
