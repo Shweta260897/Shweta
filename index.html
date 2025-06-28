@@ -1,5 +1,4 @@
-
-<!-- index.html (Homepage with animations) -->
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +12,6 @@
       font-family: 'Inter', sans-serif;
       background: #fffdf7;
       color: #3d405b;
-      scroll-behavior: smooth;
     }
     nav {
       background: #81b29a;
@@ -23,7 +21,7 @@
       gap: 1.5rem;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 10;
     }
     nav a {
       color: white;
@@ -36,7 +34,7 @@
     }
     main {
       max-width: 900px;
-      margin: 40px auto;
+      margin: 60px auto;
       text-align: center;
       padding: 20px;
       animation: fadeIn 1s ease-in;
@@ -44,17 +42,22 @@
     h1 {
       font-size: 2.5rem;
       color: #81b29a;
-      animation: slideDown 0.8s ease-out;
+      margin: 0;
     }
-    p {
+    h2 {
+      font-size: 1.8rem;
+      color: #3d405b;
+      margin-top: 40px;
+    }
+    .subtitle {
       font-size: 1.2rem;
+      color: #3d405b;
       margin-bottom: 30px;
-      animation: fadeIn 1.2s ease-in;
     }
     .profile {
-      width: 280px;
+      width: 220px;
       height: auto;
-      border-radius: 10px;
+      border-radius: 12px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
       transition: transform 0.3s;
     }
@@ -62,21 +65,23 @@
       transform: scale(1.05);
     }
     footer {
-      text-align: center;
-      padding: 30px 20px;
       background: #f2cc8f;
       color: #3d405b;
       font-size: 14px;
-      animation: fadeIn 1.5s ease-in;
+      padding: 20px;
+      text-align: center;
+      line-height: 1.5;
     }
-
+    footer a {
+      color: #3d405b;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideDown {
-      from { transform: translateY(-20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -89,29 +94,30 @@
     <a href="awards.html">Honours & Awards</a>
   </nav>
   <main>
-    <h1>Hello Guys! Welcome to My Website</h1>
-     <img src="IMG_20240826_220538156.jpg" alt="Shweta Kumari" class="profile">
-    <p>Hello! I'm <strong>Shweta Kumari</strong>, a PhD scholar at the Department of Mathematics, IIT Delhi.</p>
-    <main>
-    <h1>Research Intreset</h1>
-    <ul>
-      <li>Finite Difference Schemes<li>
-      <li>Fractional Differential Equations</li>
-        <li> Loaded Differential Equations</li>
-      <li>Metric Graphs</li>
+    <img src="IMG_20240826_220538156.jpg" alt="Shweta Kumari" class="profile">
+    <h1>Shweta Kumari</h1>
+    <p class="subtitle">PhD Scholar, Department of Mathematics, IIT Delhi</p>
+
+    <h2>Welcome to my homepage</h2>
+    <p>Hello and welcome! I'm Shweta Kumari, currently pursuing my PhD in Mathematics at the Indian Institute of Technology Delhi. My academic journey has been deeply rooted in mathematical modeling, numerical analysis, and the development of efficient computational methods. I am passionate about applying rigorous mathematics to solve complex differential equations that arise in real-world phenomena.</p>
+
+    <h2>Research Interests</h2>
+    <ul style="text-align: left; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+      <li>Time-fractional differential equations</li>
+      <li>Finite difference and nonstandard numerical schemes</li>
+      <li>Computational methods on metric graphs</li>
+      <li>Stability and consistency analysis of discrete approximations</li>
+      <li>Applications to anomalous diffusion and nonlocal dynamics</li>
     </ul>
   </main>
-     <footer>
-  <p>Contact: <a href="mailto:shwetakri8062@gmail.com">shwetakri8062@gmail.com</a></p>
-  <p>
-    <a href="https://scholar.google.co.in/citations?user=85F3FS0AAAAJ" target="_blank">Google Scholar</a> |
-    <a href="https://www.researchgate.net/profile/Shweta-Kumari-54" target="_blank">ResearchGate</a>
-  </p>
-  <p><a href="Shweta_CV.pdf" target="_blank">Download Full CV (PDF)</a></p>
-  <p>&copy; 2025 Shweta Kumari</p>
-</footer>
+  <footer>
+    <p>Contact: <a href="mailto:shwetakri8062@gmail.com">shwetakri8062@gmail.com</a></p>
+    <p>
+      <a href="https://scholar.google.co.in/citations?user=85F3FS0AAAAJ" target="_blank">Google Scholar</a> |
+      <a href="https://www.researchgate.net/profile/Shweta-Kumari-54" target="_blank">ResearchGate</a>
+    </p>
+    <p><a href="Shweta_CV.pdf" target="_blank">Download Full CV (PDF)</a></p>
+    <p>&copy; 2025 Shweta Kumari</p>
+  </footer>
 </body>
- 
 </html>
-
-
