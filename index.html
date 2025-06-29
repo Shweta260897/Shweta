@@ -6,93 +6,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shweta Kumari | Homepage</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
+ <style>
     body {
+      font-family: Arial, sans-serif;
+      background-color: #fffbf0;
+      color: #333;
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #fffdf7;
-      color: #3d405b;
+    }
+    header, nav, footer {
+      background-color: #cce4f6;
+      padding: 1em;
+      text-align: center;
     }
     nav {
-      background: #81b29a;
-      padding: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      background-color: #e2f0f7;
     }
     nav a {
-      color: white;
+      margin: 0 1em;
       text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #f2cc8f;
+      color: #377b9c;
+      font-weight: bold;
     }
     main {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 20px;
-      animation: fadeIn 1s ease-in;
-    }
-    .intro-section {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 30px;
-      margin-bottom: 40px;
-    }
-    .profile {
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
+      max-width: 960px;
+      margin: 2em auto;
+      background: #fffff8;
+      padding: 1.5em;
       border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      border: 1px solid #f0e1c2;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    h2 {
+      color: #2c698d;
+      border-bottom: 2px solid #8ac2dc;
+      padding-bottom: 0.2em;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    li {
+      margin-bottom: 0.8em;
+    }
+    .intro-container {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      flex-wrap: wrap;
+    }
+    .intro-container img {
+      max-width: 200px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
     }
     .intro-text {
       flex: 1;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #81b29a;
-      margin-bottom: 5px;
-    }
-    .subtitle {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-    h2 {
-      font-size: 1.8rem;
-      color: #3d405b;
-      margin-top: 40px;
-    }
-    ul {
-      text-align: left;
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.8;
-    }
-    footer {
-      background: #f2cc8f;
-      color: #3d405b;
-      font-size: 14px;
-      padding: 20px;
-      text-align: center;
-      line-height: 1.5;
-    }
-    footer a {
-      color: #3d405b;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
